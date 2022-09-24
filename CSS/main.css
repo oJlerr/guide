@@ -1,0 +1,303 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,h1,h2,h3,h4,p,ul[class],ol[class],li,figure,figcaption,blockquote,dl,dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+.d-f{
+  display: flex;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container{
+  width: 1140px;
+  margin: 0 auto;
+
+}
+
+.header{
+  background: linear-gradient(180deg, rgba(121, 181, 196, 0) 1.39%, rgba(19, 75, 85, 0.26) 44.44%),url('../IMG/Rectangle 1.png') no-repeat center top;
+  text-align: center;
+  padding-top: 90px;
+  color:#fff;
+  padding-bottom: 72px;
+
+
+}
+.header__logo img{
+  margin: 0 auto;
+}
+.header__pretitle{
+  display: block;
+  padding: 8px 17px;
+  width: 239px;
+  background-color: #fff;
+  color:#000;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 0 auto;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 201px;
+  margin-bottom: 24px;
+  letter-spacing:0.05em;
+}
+.header__title{
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 73px;
+  letter-spacing: 0.145em;
+  margin-bottom: 24px;
+  margin-bottom: 24px;
+
+}
+
+
+.header__text{
+  font-size: 20px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.05em;
+margin-bottom: 24px;
+
+}
+.header__btn {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin: 0 auto ;
+  padding: 18px 52px;
+  background: #23CF7D;
+  width: 247px;
+  text-align: center;
+  border-radius: 45px;
+  transition: all 0.5s ease;
+}
+
+.header__btn:hover{
+ box-shadow: 3px 3px 9px #23CF7D;
+ color: #23CF7D;
+ background-color: #fff;
+
+}
+.arrow img{
+  display: block;
+  margin: 0 auto;
+  margin-top: 217px;
+}
+.routes{
+  padding: 143px 0 50px;
+  color:#304041;
+
+}
+.routes__title{
+font-size: 30px;
+letter-spacing: 0.05em;
+line-height: 1.037em;
+margin-bottom: 100px;
+text-align: center;
+}
+.wrapper {
+  display: flex;
+  margin-bottom: 108px;
+}
+.wrapper__content{
+text-align: left;
+}
+.wrapper__left{
+  background: #EAF4F6;
+  width: 60%;
+  padding: 112px 78px;
+}
+.wrapper__right{
+  width: 50%;
+  height: 649px;
+ filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+.wrapper__route{
+  color: #789AA0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.018em;
+  margin-bottom: 20px;
+}
+.wrapper__title{
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.029em;
+  margin-bottom: 40px;
+}
+.wrapper__list{
+ 
+  margin-bottom: 48px;
+}
+.wrapper__text{
+font-size: 15px;
+font-weight: 500;
+line-height: 1.022em;
+letter-spacing: 0.05em;
+margin-bottom: 30px;
+}
+.arrow__next{ 
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.wrapper:hover .arrow__next{
+  opacity: 1;
+}
+.btn__ghost{
+  display: block;
+  text-decoration: none;
+  width: 332px;
+  margin: 0 auto;
+  padding: 18px 49px;
+  border:1px solid #23CF7D;
+  border-radius: 40px;
+  color:#23CF7D;
+  font-weight: 800;
+  font-size: 16px;
+  transition: all 0.5s ease;
+}
+.btn__ghost:hover{
+  color:#fff;
+  background-color: #23CF7D;
+}
+.opp {
+  margin-top: 147px;
+}
+.opp__title{
+line-height: 1.037;
+color:#304041;
+text-align: center;
+font-size: 30px;
+font-weight: 800;
+letter-spacing: 0.05em;
+margin-bottom: 93px;
+
+
+
+}
+.opp__content{
+  background: url('../IMG/photo-prague (1).png')no-repeat right top/50%;
+  height: 626px;
+
+}
+.opp__item{
+font-size: 16px;
+font-weight: 500;
+line-height: 1.02em;
+letter-spacing: 0.05em;
+color: #304041;
+margin-bottom: 61px;
+width: 407px;
+
+position: relative;
+}
+
+.opp__item:before{
+  content:'';
+  background: #4EB1B6;
+  width:65px;
+  height: 7px;
+  border-radius: 5px;
+  top:-15px;
+  position: absolute;
+}
+
+.opp__list{
+  margin-top: 100px;
+}
+.container__full-height{
+  align-items: center;
+  height: 100%;
+  display: flex;
+}
+
+.footer{
+  color: #5C7677;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.017em;
+  padding-bottom: 40px;
+
+}
+.footer__roots{
+  margin-right: 50px;
+}
+.scroll_top{
+ display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  width: 32px;
+  height: 32px;
+  background: url(https://snipp.ru/img/scroll_top.png) 50% 50% no-repeat;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.scroll_top:hover {
+  opacity: 1;
+}
+
